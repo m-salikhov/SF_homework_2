@@ -27,6 +27,10 @@ module.exports = {
           pretty: true,
         },
       },
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+      },
     ],
   },
   optimization: {
