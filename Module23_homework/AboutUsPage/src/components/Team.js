@@ -6,12 +6,11 @@ import photoMorozov from '../img/teamPhotos/morozov.png';
 import photoDeeva from '../img/teamPhotos/deeva.png';
 import photoStrelkova from '../img/teamPhotos/strelkova.png';
 
-
 class Team extends Component {
-    render() {
-        return (
-            <section className='team'>
-                <h2>Команда</h2>
+  render() {
+    return (
+      <section className="team">
+        <h2>Команда</h2>
         <div className="team__container">
           <div className="team__first-row">
             <div className="team__card">
@@ -72,10 +71,9 @@ class Team extends Component {
             </div>
           </div>
         </div>
-                
-            </section>
-        );
-    }
+      </section>
+    );
+  }
 }
 
 export default Team;

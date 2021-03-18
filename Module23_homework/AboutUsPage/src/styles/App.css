@@ -1,61 +1,104 @@
 /*Обнуление*/
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
-*,*:before,*:after{
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-
-nav,footer,header,aside{display: block;}
-
-html,body{
-	height: 100%;
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+:focus,
+:active {
+  outline: none;
 }
-input,button,textarea{font-family:inherit;}
+a:focus,
+a:active {
+  outline: none;
+}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
 /*--------------------*/
 
 @font-face {
   src: url('../fonts/Roboto-Regular.ttf');
-  font-family: "Roboto Regular";
+  font-family: 'Roboto Regular';
 }
 @font-face {
   src: url('../fonts/Roboto-Bold.ttf');
-  font-family: "Roboto Bold";
+  font-family: 'Roboto Bold';
 }
 
 body {
-  font-family: "Roboto Regular", Arial, Helvetica;
+  font-family: 'Roboto Regular', Arial, Helvetica;
 }
-h1,h2 {
-  font-family: "Roboto Bold";
+h1,
+h2 {
+  font-family: 'Roboto Bold';
 }
 
 header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin: 0px 40px 100px;
   padding-top: 30px;
 }
@@ -64,7 +107,7 @@ header {
 }
 nav {
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 li {
@@ -73,14 +116,14 @@ li {
 li a {
   padding: 0px 15px;
   font-size: 16px;
-  color: rgb(27,27,27,1);
-  ;
+  color: rgb(27, 27, 27, 1);
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   color: red;
   cursor: pointer;
-  }
+}
 
 button {
   padding: 12px 30px;
@@ -122,8 +165,8 @@ h2 {
 
 .contacts {
   margin-bottom: 80px;
-  background-color: rgb(247,249,251,1);
-} 
+  background-color: rgb(247, 249, 251, 1);
+}
 .contacts h2 {
   padding: 80px 0px 40px;
 }
@@ -134,14 +177,13 @@ h2 {
 .rectangle {
   width: 1px;
   height: 62px;
-  background-color: rgb(200,200,207,1);
+  background-color: rgb(200, 200, 207, 1);
   margin: 0px 68px 100px 69px;
 }
 .contacts__type {
   font-size: 14px;
-  color: rgb(79,79,79,1);
+  color: rgb(79, 79, 79, 1);
   padding: 6px 0px;
-
 }
 .contacts__value {
   font-size: 20px;
@@ -153,7 +195,8 @@ h2 {
 .team h2 {
   margin-bottom: 55px;
 }
-.team__first-row, .team__second-row {
+.team__first-row,
+.team__second-row {
   display: flex;
   justify-content: center;
 }
@@ -170,20 +213,20 @@ p.team__name {
   padding: 23px 0px 8px;
 }
 p.team__position {
-  color:rgb(130,130,130,1);
+  color: rgb(130, 130, 130, 1);
   font-size: 14px;
 }
 
 footer {
   height: 124px;
-  background-color: rgb(63,61,86,1);
+  background-color: rgb(63, 61, 86, 1);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 footer p {
   padding-left: 40px;
-  color: rgb(255,255,255,1);
+  color: rgb(255, 255, 255, 1);
   font-size: 16px;
 }
 .footer__icons {
@@ -195,6 +238,8 @@ footer p {
   padding: 0px 10px;
 }
 
-.icon-insta:hover, .icon-vk:hover, .icon-fb:hover {
+.icon-insta:hover,
+.icon-vk:hover,
+.icon-fb:hover {
   background-color: rgb(35, 197, 57);
 }
